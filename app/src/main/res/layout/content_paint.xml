@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_paint"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.df_sistemas.paint_v01.Paint"
+    tools:showIn="@layout/activity_paint"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/button"
+            android:layout_weight="1"
+            android:src="@mipmap/nuevo"
+            />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/button4"
+            android:layout_weight="1"
+            android:src="@mipmap/pintar1"/>
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/button3"
+            android:layout_weight="1"
+            android:src="@mipmap/trazo"
+            />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/button2"
+            android:layout_weight="1"
+            android:src="@mipmap/guardar"
+            />
+
+    </LinearLayout>
+
+    <view
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        class="com.example.df_sistemas.paint_v01.Lienzo"
+        android:id="@+id/lienzo"
+        android:layout_weight="5"
+        android:background="#FFFFFFFF"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height='@dimen/alturacolor'
+            app:srcCompat="@mipmap/ic_launcher"
+            android:id="@+id/imageButton5"
+            android:layout_weight="1"
+            android:tag="#FF000000"
+            android:background="#FF000000"
+            />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height='@dimen/alturacolor'
+            app:srcCompat="@mipmap/ic_launcher"
+            android:id="@+id/imageButton4"
+            android:layout_weight="1"
+            android:tag="#ef4b4b"
+            android:background="#ef4b4b"
+            />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height='@dimen/alturacolor'
+            app:srcCompat="@mipmap/ic_launcher"
+            android:id="@+id/imageButton3"
+            android:layout_weight="1"
+            android:tag="#4b59ef"
+            android:background="#4b59ef"
+            />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height='@dimen/alturacolor'
+            app:srcCompat="@mipmap/ic_launcher"
+            android:id="@+id/imageButton2"
+            android:layout_weight="1"
+            android:tag="#37da31"
+            android:background="#37da31"
+            />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height='@dimen/alturacolor'
+            app:srcCompat="@mipmap/ic_launcher"
+            android:id="@+id/imageButton"
+            android:layout_weight="1"
+            android:tag="#FFFFFFFF"
+            android:background="#FFFFFFFF"
+            />
+    </LinearLayout>
+
+</LinearLayout>
