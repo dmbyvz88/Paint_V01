@@ -72,7 +72,7 @@
             android:layout_width="0dp"
             android:layout_height='@dimen/alturacolor'
             app:srcCompat="@mipmap/ic_launcher"
-            android:id="@+id/imageButton5"
+            android:id="@+id/negro"
             android:layout_weight="1"
             android:tag="#FF000000"
             android:background="#FF000000"
@@ -82,7 +82,7 @@
             android:layout_width="0dp"
             android:layout_height='@dimen/alturacolor'
             app:srcCompat="@mipmap/ic_launcher"
-            android:id="@+id/imageButton4"
+            android:id="@+id/rojo"
             android:layout_weight="1"
             android:tag="#ef4b4b"
             android:background="#ef4b4b"
@@ -92,7 +92,7 @@
             android:layout_width="0dp"
             android:layout_height='@dimen/alturacolor'
             app:srcCompat="@mipmap/ic_launcher"
-            android:id="@+id/imageButton3"
+            android:id="@+id/azul"
             android:layout_weight="1"
             android:tag="#4b59ef"
             android:background="#4b59ef"
@@ -102,7 +102,7 @@
             android:layout_width="0dp"
             android:layout_height='@dimen/alturacolor'
             app:srcCompat="@mipmap/ic_launcher"
-            android:id="@+id/imageButton2"
+            android:id="@+id/verde"
             android:layout_weight="1"
             android:tag="#37da31"
             android:background="#37da31"
@@ -112,10 +112,10 @@
             android:layout_width="0dp"
             android:layout_height='@dimen/alturacolor'
             app:srcCompat="@mipmap/ic_launcher"
-            android:id="@+id/imageButton"
+            android:id="@+id/amarillo"
             android:layout_weight="1"
-            android:tag="#FFFFFFFF"
-            android:background="#FFFFFFFF"
+            android:tag="#FFFFF00F"
+            android:background="#FFFFF00F"
             />
     </LinearLayout>
 

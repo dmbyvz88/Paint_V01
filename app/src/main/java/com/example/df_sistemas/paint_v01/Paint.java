@@ -8,9 +8,16 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ImageButton;
 
-public class Paint extends AppCompatActivity {
+public class Paint extends AppCompatActivity implements View.OnClickListener{
 
+    ImageButton negro;
+    ImageButton rojo;
+    ImageButton azul;
+    ImageButton verde;
+    ImageButton amarillo;
+    Lienzo lienso;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,7 +25,20 @@ public class Paint extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        //enlaze de butones
+        negro = (ImageButton)findViewById(R.id.negro);
+        rojo = (ImageButton)findViewById(R.id.rojo);
+        azul = (ImageButton)findViewById(R.id.azul);
+        verde = (ImageButton)findViewById(R.id.verde);
+        amarillo = (ImageButton)findViewById(R.id.amarillo);
 
+        negro.setOnClickListener(this);
+        rojo.setOnClickListener(this);
+        azul.setOnClickListener(this);
+        verde.setOnClickListener(this);
+        amarillo.setOnClickListener(this);
+
+        lienso = (Lienzo)findViewById(R.id.lienzo);
     }
 
     @Override
@@ -43,4 +63,27 @@ public class Paint extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
+    @Override
+    public void onClick(View view) {
+        switch (view.getId()){
+            case R.id.negro:
+
+                break;
+            case R.id.rojo:
+
+                break;
+            case R.id.azul:
+
+                break;
+            case R.id.verde:
+
+                break;
+            case R.id.amarillo:
+
+                break;
+            default:
+
+                break;
+        }
+    }
 }
