@@ -138,7 +138,11 @@ public class Lienzo extends View {
 
     }
 
-
+    public void setPaintColor(String newColor){
+        invalidate();
+        paintColor = Color.parseColor(newColor);
+        drawPaint.setColor(paintColor);
+    }
 
 }
 
