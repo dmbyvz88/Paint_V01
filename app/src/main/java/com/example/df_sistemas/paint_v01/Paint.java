@@ -65,7 +65,7 @@ public class Paint extends AppCompatActivity implements View.OnClickListener{
 
     @Override
     public void onClick(View view) {
-        String color;
+        String color = null;
         switch (view.getId()){
             case R.id.negro:
                 color = view.getTag().toString();
